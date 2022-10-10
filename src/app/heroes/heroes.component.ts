@@ -22,9 +22,4 @@ export class HeroesComponent implements OnInit {
       heroes => this.heroes = heroes
     );
   }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected her id=${hero.id}`)
-  }
 }
